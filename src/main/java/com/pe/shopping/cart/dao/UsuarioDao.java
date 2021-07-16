@@ -5,5 +5,5 @@ import com.pe.shopping.cart.entity.Usuario;
 
 public interface UsuarioDao extends CrudRepository<Usuario, Long>{
 
-	public Usuario findByUsername(String username);
+	Usuario findByUsername(String username);
 }

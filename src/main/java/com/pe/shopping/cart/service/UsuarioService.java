@@ -4,5 +4,5 @@ import com.pe.shopping.cart.entity.Usuario;
 
 public interface UsuarioService {
 
-	public Usuario findByUsername(String username);
+	Usuario findByUsername(String username);
 }

@@ -1,15 +1,12 @@
 package com.pe.shopping.cart.service;
 
 import java.util.List;
-import com.pe.shopping.cart.entity.Cliente;
-
+import com.pe.shopping.cart.dto.ClienteDTO;
 
 public interface ClienteService{
 	
-	public List<Cliente> findAll();
-	public Cliente findClienteById(Integer idCliente);
-	public Cliente saveCliente(Cliente cliente);
-	public void deleteClienteById(Integer idCliente);
-	
-
+	List<ClienteDTO> findClientes();
+	ClienteDTO findClienteById(Long idCliente);
+	ClienteDTO saveCliente(ClienteDTO cliente);
+	void deleteClienteById(Long idCliente);
 }

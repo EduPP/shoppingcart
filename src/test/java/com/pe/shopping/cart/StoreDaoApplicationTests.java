@@ -48,7 +48,7 @@ class ShoppingCartDaoApplicationTests {
 	
 	@Test
 	void clienteTest() {
-		Cliente cliente = clienteDao.findById(1).get();
+		Cliente cliente = clienteDao.findById(1L).get();
 		log.info(cliente.toString());
 		assertNotNull(cliente);		
 		
@@ -56,7 +56,7 @@ class ShoppingCartDaoApplicationTests {
 	
 	@Test
 	void ventaTest() {
-		Venta venta = ventaDao.findById(1).get();
+		Venta venta = ventaDao.findById(1L).get();
 		log.info(venta.toString());
 		assertNotNull(venta);		
 		

@@ -5,8 +5,8 @@ import com.pe.shopping.cart.entity.DetalleVenta;
 
 public interface DetalleVentaService {
 
-	public List<DetalleVenta> findAll();
-	public DetalleVenta findDetalleVentaById(Integer idDetalleVenta);
-	public DetalleVenta saveDetalleVenta(DetalleVenta detalleVenta);
-	public void deleteDetalleVentaById(Integer idDetalleVenta);
+	List<DetalleVenta> findAll();
+	DetalleVenta findDetalleVentaById(Integer idDetalleVenta);
+	DetalleVenta saveDetalleVenta(DetalleVenta detalleVenta);
+	void deleteDetalleVentaById(Integer idDetalleVenta);
 }
