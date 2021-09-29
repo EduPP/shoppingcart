@@ -1,6 +1,6 @@
 use store;
 
-INSERT INTO `usuarios` (username, password, enabled, nombre, apellido, email) VALUES ('andres','$2a$10$C3Uln5uqnzx/GswADURJGOIdBqYrly9731fnwKDaUdBkt/M3qvtLq',1, 'eduardo', 'pillco','profesor@mail.com');
+INSERT INTO `usuarios` (username, password, enabled, nombre, apellido, email) VALUES ('andres','$2a$10$C3Uln5uqnzx/GswADURJGOIdBqYrly9731fnwKDaUdBkt/M3qvtLq',1, 'andres', 'farfan','profesor@mail.com');
 INSERT INTO `usuarios` (username, password, enabled, nombre, apellido, email) VALUES ('admin','$2a$10$RmdEsvEfhI7Rcm9f/uZXPebZVCcPC7ZXZwV51efAvMAp1rIaRAfPK',1, 'John', 'Doe','jhon.doe@mail.com');
 
 INSERT INTO `roles` (nombre) VALUES ('ROLE_USER');
@@ -10,9 +10,9 @@ INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (1, 1);
 INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 2);
 INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 1);
 
-INSERT INTO CLIENTE (NOMBRE, APELLIDO, DNI,TELEFONO,EMAIL) VALUES ('Sara','Meoño',33774488,987543281, 'smeñono@gmail.com');
-INSERT INTO CLIENTE (NOMBRE, APELLIDO, DNI,TELEFONO,EMAIL) VALUES ('Eduardo','Pillco',8866338,987543281, 'edu.pillco@gmail.com');
-INSERT INTO CLIENTE (NOMBRE, APELLIDO, DNI,TELEFONO,EMAIL) VALUES ('Giuliana','Hernandez',33774499,983576281, 'giu.hernandez@gmail.com');
+INSERT INTO CLIENTE (NOMBRE, APELLIDO, DNI,TELEFONO,EMAIL) VALUES ('Juan','Gonzales',33774488,987543281, 'juan.gonzales@gmail.com');
+INSERT INTO CLIENTE (NOMBRE, APELLIDO, DNI,TELEFONO,EMAIL) VALUES ('Erick','Alfaro',8866338,987543281, 'erick.alfaro@gmail.com');
+INSERT INTO CLIENTE (NOMBRE, APELLIDO, DNI,TELEFONO,EMAIL) VALUES ('Karina','Hilario',33774499,983576281, 'k.hilario@gmail.com');
 
 INSERT INTO VENTA(IDCLIENTE,FECHA) VALUES(1,STR_TO_DATE('21-07-2020','%d-%m-%Y'));
 INSERT INTO VENTA(IDCLIENTE,FECHA) VALUES(2,STR_TO_DATE('12-06-2020','%d-%m-%Y'));
