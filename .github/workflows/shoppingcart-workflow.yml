@@ -20,7 +20,7 @@ jobs:
           java-version: ${{env.JAVA_VERSION}}
 
       - name: Setup Maven Action
-        uses: s4u/setup-maven-action@1.14.0
+        uses: s4u/setup-maven-action@v1.14.0
         with:
           maven-version: ${{env.MAVEN_VERSION}}
 
