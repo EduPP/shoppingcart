@@ -1,0 +1,30 @@
+name: ShoppingCart Workflow
+on: push
+
+env:
+  JAVA_VERSION: "17"
+  JAVA_DISTRIBUTION: "corretto"
+  MAVEN_VERSION: "3.9.8"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+
+      - name: Set upt JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: ${{env.JAVA_DISTRIBUTION}}
+          java-version: ${{env.JAVA_VERSION}}
+
+      - name: Setup Maven Action
+        uses: s4u/setup-maven-action@1.14.0
+        with:
+          maven-version: ${{env.MAVEN_VERSION}}
+
+      - name: Build test and validate app
+      - run: mvn --batch-mode --update-snapshots verify
+
+
