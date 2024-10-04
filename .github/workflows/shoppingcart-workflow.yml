@@ -28,15 +28,6 @@ jobs:
           maven-version: ${{env.MAVEN_VERSION}}
 
       - name: Build app
-        run: mvn clean build
-
-  test:
-
-  desploy:
-    needs: [build-test]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy app
-        run: echo "Deploying app"
+        run: mvn clean package
 
 
