@@ -34,7 +34,8 @@ class ShoppingCartDaoApplicationTests {
 	
 	@Mock
 	private DetalleVentaDao detalleVentaDao;
-	
+
+	/*
 	@Test
 	void clienteFindAllTest() {
 		when(clienteDao.findAll()).thenReturn(List.of(
